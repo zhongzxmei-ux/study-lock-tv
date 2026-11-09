@@ -127,8 +127,7 @@ class QuizOverlayManager(
             "${q.gradeLabel} · ${q.subject} · 第 ${solvedCount + 1}/$total 题"
 
         val promptText = if (config.pinyinEnabled && q.grade <= 2 && !q.promptPinyin.isNullOrBlank()) {
-            "${q.promptPinyin}
-${q.prompt}"
+            "${q.promptPinyin}\n${q.prompt}"
         } else {
             q.prompt
         }
