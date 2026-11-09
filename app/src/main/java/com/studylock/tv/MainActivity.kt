@@ -127,8 +127,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         findViewById<Button>(R.id.btnDurMinus).setOnClickListener {
-            config.watchMinutes = (config.watchMinutes - 1).coerceAtLeast(1)
-            refreshUi()
+"${q.promptPinyin}\n${q.prompt}"
         }
         findViewById<Button>(R.id.btnDurPlus).setOnClickListener {
             config.watchMinutes = (config.watchMinutes + 1).coerceAtMost(600)
